@@ -1,5 +1,5 @@
-const SayHello = () => {
-    return "Hello Javascript"
+const SayHello = (message) => {
+    return "Hello " + message
 }
 
 module.exports = {
