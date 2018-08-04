@@ -1,5 +1,5 @@
 const SayHello = (message) => {
-    return "Hello " + message
+    return `Hello ${message}`
 }
 
 module.exports = {
