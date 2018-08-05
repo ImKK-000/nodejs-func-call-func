@@ -1,4 +1,5 @@
 const PREFIX_MESSAGE = "Hello"
+const DEFAULT_EMPTY_MESSAGE = "Thailand"
 
 const SayHello = (message) => {
     return greeting(message)
@@ -6,7 +7,7 @@ const SayHello = (message) => {
 
 const greeting = (message) => {
     if (isEmpty(message)) {
-        message = "Thailand"
+        message = DEFAULT_EMPTY_MESSAGE
     }
     return `${PREFIX_MESSAGE} ${message}`
 }
