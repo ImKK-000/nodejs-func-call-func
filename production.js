@@ -5,10 +5,14 @@ const SayHello = (message) => {
 }
 
 const greeting = (message) => {
-    if (message.length === 0) {
+    if (isEmpty(message)) {
         message = "Thailand"
     }
     return `${PREFIX_MESSAGE} ${message}`
+}
+
+const isEmpty = (message) => {
+    return message.length === 0
 }
 
 module.exports = {
