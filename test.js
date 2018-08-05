@@ -1,6 +1,6 @@
 const { SayHello } = require("./production")
 
-const TestSayHelloShouldBeHelloJavascript = () => {
+const TestSayHelloInputJavascriptShouldBeHelloJavascript = () => {
     const expectedMessage = "Hello Javascript"
 
     const actualMessage = SayHello("Javascript")
@@ -10,9 +10,9 @@ const TestSayHelloShouldBeHelloJavascript = () => {
             expectedMessage, actualMessage)
     }
 }
-TestSayHelloShouldBeHelloJavascript()
+TestSayHelloInputJavascriptShouldBeHelloJavascript()
 
-const TestSayHelloShouldBeHelloThailand = () => {
+const TestSayHelloEmptyMessageShouldBeHelloThailand = () => {
     const expectedMessage = "Hello Thailand"
 
     const actualMessage = SayHello("")
@@ -22,4 +22,4 @@ const TestSayHelloShouldBeHelloThailand = () => {
             expectedMessage, actualMessage)
     }
 }
-TestSayHelloShouldBeHelloThailand()
+TestSayHelloEmptyMessageShouldBeHelloThailand()
