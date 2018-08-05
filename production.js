@@ -6,10 +6,11 @@ const SayHello = (message) => {
 }
 
 const greeting = (message) => {
-    if (isEmpty(message)) {
-        message = DEFAULT_EMPTY_MESSAGE
+    let messageWithTrim = message.trim()
+    if (isEmpty(messageWithTrim)) {
+        messageWithTrim = DEFAULT_EMPTY_MESSAGE
     }
-    return `${PREFIX_MESSAGE} ${message}`
+    return `${PREFIX_MESSAGE} ${messageWithTrim}`
 }
 
 const isEmpty = (message) => {

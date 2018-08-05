@@ -12,7 +12,7 @@ const TestSayHelloInputJavascriptShouldBeHelloJavascript = () => {
 }
 TestSayHelloInputJavascriptShouldBeHelloJavascript()
 
-const TestSayHelloEmptyMessageShouldBeHelloThailand = () => {
+const TestSayHelloInputEmptyMessageShouldBeHelloThailand = () => {
     const expectedMessage = "Hello Thailand"
 
     const actualMessage = SayHello("")
@@ -22,4 +22,16 @@ const TestSayHelloEmptyMessageShouldBeHelloThailand = () => {
             expectedMessage, actualMessage)
     }
 }
-TestSayHelloEmptyMessageShouldBeHelloThailand()
+TestSayHelloInputEmptyMessageShouldBeHelloThailand()
+
+const TestSayHelloInputWhiteSpaceMessageShouldBeHelloThailand = () => {
+    const expectedMessage = "Hello Thailand"
+
+    const actualMessage = SayHello(" ")
+
+    if (actualMessage != expectedMessage) {
+        console.error("expect '%s' but it got '%s'",
+            expectedMessage, actualMessage)
+    }
+}
+TestSayHelloInputWhiteSpaceMessageShouldBeHelloThailand()
