@@ -5,7 +5,7 @@ const SayHello = (message) => {
 }
 
 const greeting = (message) => {
-    if (message == "") {
+    if (message.length === 0) {
         message = "Thailand"
     }
     return `${PREFIX_MESSAGE} ${message}`
